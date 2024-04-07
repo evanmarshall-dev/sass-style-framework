@@ -1,0 +1,8 @@
+/**/*.*
+!package.json
+!README.md
+!.prettierrc.json
+!.eslintrc.json
+!src/**/*
+!gulpfile.js
+!gulp-tasks/**/*.js

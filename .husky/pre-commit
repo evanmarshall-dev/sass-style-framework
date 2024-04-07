@@ -1,0 +1,5 @@
+echo '🏗️👷 Bro! I am going to check your scripts for errors and then format your code so that it looks gorgeous!!'
+
+npx lint-staged
+
+echo '✅✅✅✅ Beauty! Everything looks flawless ... I am committing this now. ✅✅✅✅'
