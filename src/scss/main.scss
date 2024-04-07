@@ -7,4 +7,17 @@
  * And in a Sass-way MERGE them.
  --------------------------------------------- */
 
+// Abstracts
 @use 'abstracts' as *;
+
+// Base
+@use 'base' as *;
+
+// Components
+@use 'components' as *;
+
+// Layouts
+@use 'layouts' as *;
+
+// Pages
+// @use 'pages' as *;
