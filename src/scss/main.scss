@@ -7,22 +7,4 @@
  * And in a Sass-way MERGE them.
  --------------------------------------------- */
 
-// @import 'abstracts/variables';
-// @import 'abstracts/mixins';
-
-// @import 'base/sfcc-resets';
-// @import "base/utilities";
-
-// @import "components/images";
-// @import "components/icons";
-// @import 'components/links';
-// @import 'components/copy';
-// @import "components/modals";
-// @import "components/widgets";
-
-// @import 'layout/sections';
-// @import "layout/cards";
-// @import "layout/heros";
-// @import "layout/footers";
-// @import "layout/banners";
-// @import "layout/accordions";
+@use 'abstracts' as *;

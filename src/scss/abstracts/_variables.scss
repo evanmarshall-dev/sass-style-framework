@@ -1,0 +1,74 @@
+// Prefixes for class names.
+$prefix: 'ed-';
+
+// Fonts.
+$font-sans: 'Raleway';
+$font-weight: (
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'extrabold': 800,
+  'blackbold': 900,
+);
+
+// Colors.
+$colors: (
+  primary: (
+    'green': #008f70,
+    'blue': #2b777d,
+  ),
+  secondary: (
+    'lightgreen': #5fbe6e,
+    'darkblue': #2b365a,
+    'lightblue': #5fbebc,
+    'yellow': #bebe5f,
+    'red': #c94242,
+    'purple': #a35fbe,
+  ),
+  gradient: (),
+  neutral: (
+    'black': #000000,
+    'darkgray': #343434,
+    'gray': #837f7f,
+    'lightgray': #f7f7f7,
+    'white': #ffffff,
+  ),
+);
+
+// Device breakpoints.
+$breakpoints: (
+  // Mobile first styles from 0px to 320px
+  'xxsmall':
+    (
+      // Tiny Mobile Styles (321px or 20.0625em - 375px).
+      min-width: 20.0625em
+    ),
+  'xsmall': (
+    // Extra Small Mobile Styles (376px or 23.5em - 425px).
+    min-width: 23.5em
+  ),
+  'small': (
+    // Small Mobile Styles (426px or 26.625em - 768px).
+    min-width: 26.625em
+  ),
+  'medium': (
+    // Medium or Tablet Styles (769px or 48.0625em - 1024px).
+    min-width: 48.0625em
+  ),
+  'large': (
+    // Large Desktop Styles (1025px or 64.0625em - 1440px).
+    min-width: 64.0625em
+  ),
+  'xlarge': (
+    // Large Desktop Styles (1441px or 90.0625em - 2560px).
+    min-width: 90.0625em
+  ),
+  'xxlarge': (
+    // Huge or 4K Desktop Styles (2561px or 160.0625em and Up).
+    min-width: 160.0625em
+  )
+);
