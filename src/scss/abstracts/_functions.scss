@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+// For calling colors from the color map variable. Maps the colors map in variables and assigns that to the color function's argument of $color-name.
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// Sample function for doubling font size.
+@function fontSize($size: 1.25rem) {
+  @return $size * 2;
+}

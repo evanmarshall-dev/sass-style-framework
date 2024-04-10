@@ -1,2 +1,31 @@
 // Abstracts
 @use '../abstracts/' as *;
+
+.ed-copy {
+  &-h1 {
+    // ? @include headingOne();
+    // OR
+    text-align: center;
+    @extend %h1;
+  }
+
+  &-h2 {
+    text-align: center;
+    // Below we call the function fontSize to double 1.5rem.
+    // ? font-size: fontSize(1.5rem);
+    // Or, if we leave the parameter blank it will double the default value of 1.25rem;
+    font-size: fontSize();
+  }
+
+  &-p {
+    @include copy();
+    color: color('neutral-black');
+
+    &--warning {
+      // In order to inherit the p styles we use @extend.
+      @extend .ed-copy-p;
+      // Another built-in function called mix, allows us to mix two different colors. If you add a third parameter it will control the weight of the first color in percentage.
+      color: mix(color('secondary-red'), color('secondary-yellow'), 60%);
+    }
+  }
+}

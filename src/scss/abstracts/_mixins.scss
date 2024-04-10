@@ -1,6 +1,6 @@
 @use 'variables' as *;
-// @use 'placeholders' as *;
-// @use 'functions' as *;
+@use 'placeholders' as *;
+@use 'functions' as *;
 
 // Media query mixin mapping breakpoints variable from _variables.scss.
 @mixin respond-to($name) {
@@ -11,5 +11,30 @@
   } @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Sample transition mixin
+// If you need a mixin with parameters that take multiple values you follow parameter with 3 dots.
+@mixin transition($param...) {
+  transition: $param;
+}
+
+// Sample heading mixin using placeholder.
+@mixin headingOne($fontSize) {
+  @extend %h1;
+}
+
+// Sample copy mixin.
+@mixin copy($fontSize: 1.25rem) {
+  font-size: $fontSize;
+  text-align: center;
+  // Below is how you write using the above transition mixin.
+  @include transition(color 0.5s, background-color 1s);
+  &:hover {
+    // Another built-in function is transparentize, which takes the first value and second value is 0-1. With 1 being an opacity of 0 and 0 being an opacity of 1.
+    color: transparentize(color('neutral-lightgray'), 0.6);
+    // SASS has some built-in functions such as lighten/darken.
+    background-color: lighten(color('neutral-black'), 50%);
   }
 }

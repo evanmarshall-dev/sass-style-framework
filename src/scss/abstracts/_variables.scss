@@ -17,26 +17,19 @@ $font-weight: (
 
 // Colors.
 $colors: (
-  primary: (
-    'green': #008f70,
-    'blue': #2b777d,
-  ),
-  secondary: (
-    'lightgreen': #5fbe6e,
-    'darkblue': #2b365a,
-    'lightblue': #5fbebc,
-    'yellow': #bebe5f,
-    'red': #c94242,
-    'purple': #a35fbe,
-  ),
-  gradient: (),
-  neutral: (
-    'black': #000000,
-    'darkgray': #343434,
-    'gray': #837f7f,
-    'lightgray': #f7f7f7,
-    'white': #ffffff,
-  ),
+  'primary-green': #008f70,
+  'primary-blue': #2b777d,
+  'secondary-lightgreen': #5fbe6e,
+  'secondary-darkblue': #2b365a,
+  'secondary-lightblue': #5fbebc,
+  'secondary-yellow': #bebe5f,
+  'secondary-red': #c94242,
+  'secondary-purple': #a35fbe,
+  'neutral-black': #000000,
+  'neutral-darkgray': #343434,
+  'neutral-gray': #837f7f,
+  'neutral-lightgray': #f7f7f7,
+  'neutral-white': #ffffff,
 );
 
 // Device breakpoints.
